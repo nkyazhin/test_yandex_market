@@ -9,7 +9,7 @@ RSpec.configure do |config|
 
   Capybara.register_driver :chrome do |app|
     Capybara::Selenium::Driver.new(app, :browser => :chrome,
-              desired_capabilities: { "chromeOptions" => { "args" => %w{ --start-maximized --disable-infobars},
+              desired_capabilities: { "chromeOptions" => { "args" => %w{ --start-maximized --disable-infobars },
                                       "prefs" => { "download.prompt_for_download" => true } } })
   end
 
